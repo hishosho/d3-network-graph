@@ -5,6 +5,8 @@ import { groupData } from './data.js'
 let newIndex = 1
 
 const graph = new NetGraphD3('#app', {
+  width: window.innerWidth,
+  height: window.innerHeight,
   graphData: groupData,
   onNodeClick: (d) => {
     console.log(`click ${d.id}`)
